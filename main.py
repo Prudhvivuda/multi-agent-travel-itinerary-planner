@@ -8,8 +8,6 @@ from langchain_core.messages import HumanMessage
 
 def travel_planner(user_request: str) -> None:
     """
-    Executes the travel planner workflow based on the user request.
-
     Args:
         user_request (str): The initial request from the user.
     """
@@ -27,10 +25,7 @@ def travel_planner(user_request: str) -> None:
 
 
 if __name__ == "__main__":
-    # user_request = "I want to plan a day trip"  # Example usage
-    # travel_planner(user_request)
-
-    # Gradio Interface (Optional - Moved here for main execution)
+    # Gradio Interface 
     import gradio as gr
 
     def gradio_travel_planner(city: str, interests: str) -> str:
